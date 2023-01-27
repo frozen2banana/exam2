@@ -31,7 +31,7 @@ import jakarta.validation.Valid;
                     Model model, HttpServletResponse response){
             if(result.hasErrors()) {
                 response.setStatus(HttpServletResponse.SC_BAD_REQUEST); // error code 400
-                return "contact";
+                return "index";
         }
         return "index";
     }
